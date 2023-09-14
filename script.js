@@ -1,5 +1,5 @@
 const url =
-  "https://youtube-v31.p.rapidapi.com/search?channelId=UCa-Q0JeeX_38r7qkdSpElWw&part=snippet%2Cid&order=date&maxResults=50";
+  "https://youtube-v31.p.rapidapi.com/search?channelId=UCa-Q0JeeX_38r7qkdSpElWw&part=snippet%2Cid&order=viewcount&maxResults=4";
 const options = {
   method: "GET",
   headers: {
@@ -39,7 +39,7 @@ async function getData(urlapi) {
    </div>
      `
        )
-       .slice(0, 4  )
+       .slice(0, 50  )
        .join("")}
 `;
     console.log(content);
